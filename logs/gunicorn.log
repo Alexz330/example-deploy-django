@@ -1,0 +1,203 @@
+[2023-06-26 20:22:17 -0600] [13359] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-test.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/alexis/Documentos/Proyectos/Personales/django-deploy
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/alexis/Documentos/Proyectos/Personales/django-deploy/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: test
+  default_proc_name: config.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f49e9765d30>
+  on_reload: <function OnReload.on_reload at 0x7f49e9765e50>
+  when_ready: <function WhenReady.when_ready at 0x7f49e9765f70>
+  pre_fork: <function Prefork.pre_fork at 0x7f49e96f70d0>
+  post_fork: <function Postfork.post_fork at 0x7f49e96f71f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f49e96f7310>
+  worker_int: <function WorkerInt.worker_int at 0x7f49e96f7430>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f49e96f7550>
+  pre_exec: <function PreExec.pre_exec at 0x7f49e96f7670>
+  pre_request: <function PreRequest.pre_request at 0x7f49e96f7790>
+  post_request: <function PostRequest.post_request at 0x7f49e96f7820>
+  child_exit: <function ChildExit.child_exit at 0x7f49e96f7940>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f49e96f7a60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f49e96f7b80>
+  on_exit: <function OnExit.on_exit at 0x7f49e96f7ca0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-26 20:22:17 -0600] [13359] [INFO] Starting gunicorn 20.1.0
+[2023-06-26 20:22:17 -0600] [13359] [DEBUG] Arbiter booted
+[2023-06-26 20:22:17 -0600] [13359] [INFO] Listening at: unix:/tmp/gunicorn-test.sock (13359)
+[2023-06-26 20:22:17 -0600] [13359] [INFO] Using worker: sync
+[2023-06-26 20:22:17 -0600] [13367] [INFO] Booting worker with pid: 13367
+[2023-06-26 20:22:18 -0600] [13368] [INFO] Booting worker with pid: 13368
+[2023-06-26 20:22:18 -0600] [13369] [INFO] Booting worker with pid: 13369
+[2023-06-26 20:22:18 -0600] [13370] [INFO] Booting worker with pid: 13370
+[2023-06-26 20:22:18 -0600] [13371] [INFO] Booting worker with pid: 13371
+[2023-06-26 20:22:18 -0600] [13359] [DEBUG] 5 workers
+[2023-06-26 20:23:18 -0600] [13359] [INFO] Handling signal: int
+[2023-06-27 02:23:18 +0000] [13371] [INFO] Worker exiting (pid: 13371)
+[2023-06-27 02:23:18 +0000] [13367] [INFO] Worker exiting (pid: 13367)
+[2023-06-27 02:23:18 +0000] [13368] [INFO] Worker exiting (pid: 13368)
+[2023-06-27 02:23:18 +0000] [13370] [INFO] Worker exiting (pid: 13370)
+[2023-06-27 02:23:18 +0000] [13369] [INFO] Worker exiting (pid: 13369)
+[2023-06-26 20:23:18 -0600] [13359] [INFO] Shutting down: Master
+[2023-06-26 20:57:48 -0600] [18100] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-test.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/alexis/Documentos/Proyectos/Personales/django-deploy
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/alexis/Documentos/Proyectos/Personales/django-deploy/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: test
+  default_proc_name: config.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2a948bfca0>
+  on_reload: <function OnReload.on_reload at 0x7f2a948bfdc0>
+  when_ready: <function WhenReady.when_ready at 0x7f2a948bfee0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2a94852040>
+  post_fork: <function Postfork.post_fork at 0x7f2a94852160>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2a94852280>
+  worker_int: <function WorkerInt.worker_int at 0x7f2a948523a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2a948524c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f2a948525e0>
+  pre_request: <function PreRequest.pre_request at 0x7f2a94852700>
+  post_request: <function PostRequest.post_request at 0x7f2a94852790>
+  child_exit: <function ChildExit.child_exit at 0x7f2a948528b0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2a948529d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2a94852af0>
+  on_exit: <function OnExit.on_exit at 0x7f2a94852c10>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-26 20:57:48 -0600] [18100] [INFO] Starting gunicorn 20.1.0
+[2023-06-26 20:57:48 -0600] [18100] [DEBUG] Arbiter booted
+[2023-06-26 20:57:48 -0600] [18100] [INFO] Listening at: unix:/tmp/gunicorn-test.sock (18100)
+[2023-06-26 20:57:48 -0600] [18100] [INFO] Using worker: sync
+[2023-06-26 20:57:48 -0600] [18108] [INFO] Booting worker with pid: 18108
+[2023-06-26 20:57:48 -0600] [18113] [INFO] Booting worker with pid: 18113
+[2023-06-26 20:57:48 -0600] [18114] [INFO] Booting worker with pid: 18114
+[2023-06-26 20:57:48 -0600] [18117] [INFO] Booting worker with pid: 18117
+[2023-06-26 20:57:48 -0600] [18118] [INFO] Booting worker with pid: 18118
+[2023-06-26 20:57:48 -0600] [18100] [DEBUG] 5 workers
+[2023-06-27 02:58:00 +0000] [18118] [DEBUG] GET /admin
+[2023-06-27 02:58:00 +0000] [18118] [DEBUG] GET /admin/
+[2023-06-27 02:58:00 +0000] [18108] [DEBUG] GET /admin/login/
+[2023-06-27 02:58:04 +0000] [18113] [DEBUG] GET /

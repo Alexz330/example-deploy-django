@@ -1,0 +1,9 @@
+[program:test]
+command=/home/alexis/Documentos/Proyectos/Personales/django-deploy/deploy/gunicorn.sh
+autostart=true
+autorestart=true
+stderr_logfile=home/alexis/Documentos/Proyectos/Personales/django-deploy/logs/err.logs
+stdout_logfile=home/alexis/Documentos/Proyectos/Personales/django-deploy/logs/out.logs
+user=alexis
+environment=LANG=en_US.UTF-8,LC_ALL=en_US.UTF-8
+
